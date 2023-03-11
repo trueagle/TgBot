@@ -1,6 +1,6 @@
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
-token='5473856646:AAEX7xcjLKmsyhmOowhsG6X_TvvemSbkxTI'
+token='your bot token'
 bot=telebot.TeleBot(token)
 
 
@@ -27,7 +27,7 @@ def show_item(call, path_to_picture, cb_data, price):
 def providing_name_callback(msg, name):
     print(msg)
     str = f'username={msg.from_user.username}, text={msg.text}, item_name={name}'
-    chat_id='-1001592487569'
+    chat_id='your id chat'
     bot.send_message(chat_id=chat_id, text=str)
 
 @bot.callback_query_handler(func=lambda call: True)
@@ -142,9 +142,6 @@ def callback_inline(call):
 
 
         elif call.data == 'Назад':            
-            # bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.message_id)
-        
-            
             button_keyboard = InlineKeyboardMarkup(row_width=2)
             callback_button = InlineKeyboardButton(text="Табак", callback_data="Табак")
             callback_button2 = InlineKeyboardButton(text="Сигареты", callback_data="Сигареты")
