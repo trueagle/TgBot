@@ -35,15 +35,15 @@ def callback_inline(call):
     if call.message:
         if call.data == "Каталог":
             button_keyboard = InlineKeyboardMarkup(row_width=2)
-            callback_button = InlineKeyboardButton(text="Табак", callback_data="Табак")
-            callback_button2 = InlineKeyboardButton(text="Сигареты", callback_data="Сигареты")
-            callback_button3 = InlineKeyboardButton(text="Сумки", callback_data="Сумки")
-            callback_button4 = InlineKeyboardButton(text="Кисет для табака", callback_data="Кисет для табака")
-            callback_button5 = InlineKeyboardButton(text="Гель для душа", callback_data="Гель для душа")
-            callback_button6 = InlineKeyboardButton(text="Дождевики", callback_data="Дождевики")
-            callback_button7 = InlineKeyboardButton(text="Презервативы", callback_data="Презервативы")  
-            callback_button8 = InlineKeyboardButton(text="Glo", callback_data="Glo")
-            callback_button9 = InlineKeyboardButton(text="Жевательная Резинка", callback_data="Жевательная Резинка")          
+            callback_button = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button2 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button3 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button4 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button5 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button6 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button7 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")  
+            callback_button8 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button9 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")          
             button_keyboard.add(callback_button,
                          callback_button2,
                          callback_button3,
@@ -62,75 +62,75 @@ def callback_inline(call):
         
         
         
-        
+#note that the price parameter is passed without quotes
         if call.data == 'Табак':            
             bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.message_id)          
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Bali Shag.jpg', "ITEM|Bali Shag Halfzware", 8500)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Bali Nature.jpg', "ITEM|Bali Nature", 8500)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Dark Chocolate.jpg', "ITEM|Dark Chocolate", 6500)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Vanilla Choice.jpg', "ITEM|Vanilla Choice", 6500)            
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Aromatic Choice.jpg', "ITEM|Aromatic Choice", 6500)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Virginia Blend.jpg', "ITEM|Virginia Blend", 6500)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Cherry.jpg', "ITEM|Cherry", 6500)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Pandan.jpg', "ITEM|Pandan", 6500)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Exotic.jpg', "ITEM|Exotic", 6500)
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")            
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
 
         if call.data == 'Сигареты':
             bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.message_id)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Captain Black Grape.jpg', "ITEM|Captain Black\nGrape", 4000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Chapman.jpg', "ITEM|Chapman", 3500)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Parlament Silver.jpg', "ITEM|Parlament Silver", 3000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Kent Switch.png', "ITEM|Kent Switch", 2500)
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
             
         if call.data == 'Сумки':            
             bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.message_id)          
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/bag black.jpg', "ITEM|Сумка Поясная\nЧерная", 6000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/bag grey.jpg', "ITEM|Сумка Поясная\nСерая", 6000)     
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")     
 
         if call.data == 'Кисет для табака':            
             bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.message_id)     
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Кисет.jpg', "ITEM|Кисет для табака", 7000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Black.jpg', "ITEM|Кисет для табака\nBlack", 7000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Grey.jpg', "ITEM|Кисет для табака\nGrey", 7000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Brown.jpg', "ITEM|Кисет для табака\nBrown", 7000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Dark Blue.jpg', "ITEM|Кисет для табака\nDark Blue", 7000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/White.jpg', "ITEM|Кисет для табака\nWhite", 7000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Dark Grey.jpg', "ITEM|Кисет для табака\nDark Grey", 7000)
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
 
         
         if call.data == 'Дождевики':            
             bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.message_id)     
-            show_item(call,'/Users/artemarestov/Documents/russhop/img/Дождевик.jpg', "ITEM|Дождевик", 1000)
+            show_item(call,'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
 
 
         if call.data == 'Гель для душа':            
             bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.message_id)     
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Old Spice Astronaut.jpg', "ITEM|Old Spice\nAstronaut\n400ml", 5000)  
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Old Spice KrakenGard.jpg', "ITEM|Old Spice\nKrakenGard\n400ml", 5000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Old Spice TigerClaw.jpg', "ITEM|Old Spice\nTigerClaw\n400ml", 5000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Old Spice WhiteWater.jpg', "ITEM|Old Spice\nWhiteWater\n400ml", 5000) 
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")  
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price") 
 
 
         if call.data == 'Презервативы':            
             bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.message_id)     
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Contex Lights.jpg', "ITEM|Contex Lights\n12шт", 7000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Contex Relief.jpg', "ITEM|Contex Relief\n12шт", 7000)
-            show_item(call, '/Users/artemarestov/Documents/russhop/img/Durex Elite.jpg', "ITEM|Durex Elite\n12шт", 9000)  
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call, 'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")  
 
                 
 
         if call.data == 'Glo':            
             bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.message_id)     
-            show_item(call,'/Users/artemarestov/Documents/russhop/img/Glo Black.png', "ITEM|Glo Black", 10000)
-            show_item(call,'/Users/artemarestov/Documents/russhop/img/Glo Blue.jpg', "ITEM|Glo Blue", 10000)
+            show_item(call,'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call,'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
 
         
         if call.data == 'Жевательная Резинка':            
             bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.message_id)     
-            show_item(call,'/Users/artemarestov/Documents/russhop/img/Orbit.jpg', "ITEM|Orbit", 500)
-            show_item(call,'/Users/artemarestov/Documents/russhop/img/Eclipse Ice Berry.jpg', "ITEM|Eclipse Ice Berry", 500)            
-            show_item(call,'/Users/artemarestov/Documents/russhop/img/Eclipse Mint.jpg', "ITEM|Eclipse Mint", 500)
-            show_item(call,'/Users/artemarestov/Documents/russhop/img/Mentos.jpg', "ITEM|Mentos", 3000)
+            show_item(call,'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call,'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")            
+            show_item(call,'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
+            show_item(call,'the path to the directory where the file is located file.jpg', "ITEM|product name", "price")
 
         if call.data.split('|')[0] == 'ITEM':
             bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.message_id)
@@ -143,15 +143,15 @@ def callback_inline(call):
 
         elif call.data == 'Назад':            
             button_keyboard = InlineKeyboardMarkup(row_width=2)
-            callback_button = InlineKeyboardButton(text="Табак", callback_data="Табак")
-            callback_button2 = InlineKeyboardButton(text="Сигареты", callback_data="Сигареты")
-            callback_button3 = InlineKeyboardButton(text="Сумки", callback_data="Сумки")
-            callback_button4 = InlineKeyboardButton(text="Кисет для табака", callback_data="Кисет для табака")
-            callback_button5 = InlineKeyboardButton(text="Гель для душа", callback_data="Гель для душа")
-            callback_button6 = InlineKeyboardButton(text="Дождевики", callback_data="Дождевики")
-            callback_button7 = InlineKeyboardButton(text="Презервативы", callback_data="Презервативы")  
-            callback_button8 = InlineKeyboardButton(text="Glo", callback_data="Glo")
-            callback_button9 = InlineKeyboardButton(text="Жевательная Резинка", callback_data="Жевательная Резинка")          
+            callback_button = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button2 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button3 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button4 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button5 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button6 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button7 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")  
+            callback_button8 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")
+            callback_button9 = InlineKeyboardButton(text="your category name", callback_data="name of the category button")          
             button_keyboard.add(callback_button,
                          callback_button2,
                          callback_button3,
@@ -160,10 +160,11 @@ def callback_inline(call):
                          callback_button6,
                          callback_button7,
                          callback_button8,
-                         callback_button9)                                       
-            bot.edit_message_reply_markup(
+                         callback_button9)
+            bot.edit_message_text(
                 chat_id=call.message.chat.id,
-                message_id=call.message.message_id,                                
+                message_id=call.message.message_id,
+                text="Выбери Категорию",
                 reply_markup=button_keyboard)
                 
 if __name__ == '__main__':
